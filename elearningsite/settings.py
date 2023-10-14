@@ -157,6 +157,12 @@ STRIPE_SECRET_KEY = 'sk_test_51ND8sLLYOpzhEaWbofRmpgUVjNzc5A6lDRF0IzD8SiYZlkH3rs
 # STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'elearning', 'static', 'elearning'),
+]
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
