@@ -154,14 +154,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STRIPE_PUBLISHABLE_KEY= 'pk_test_51ND8sLLYOpzhEaWbhCLLEswRTiKauWLTjjEMsbWblXRpmZfpQs3TvcL7GKh7BqujbccaDNHK8tJFrNH5Ze0qhpuQ00wWBtqD5o'
 STRIPE_SECRET_KEY = 'sk_test_51ND8sLLYOpzhEaWbofRmpgUVjNzc5A6lDRF0IzD8SiYZlkH3rsOhK5g8QpJE6uxCEbfmyidJC05javwLmyoMKMyZ0090az8CIh'
 
-# STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'elearning', 'static', 'elearning'),
-]
-
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'elearning\static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'elearning', 'static', 'elearning'),
+# ]
+
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
