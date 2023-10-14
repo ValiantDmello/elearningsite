@@ -1,0 +1,11 @@
+/* static/css/styles.css */
+.my-table-style {
+    /* border: 5px solid; */
+    width: 100%;
+}
+
+.my_form {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
