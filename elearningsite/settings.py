@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 from django.core.mail import send_mail
+import django_heroku
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -32,9 +34,9 @@ EMAIL_HOST_PASSWORD = 'testtesttest'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -87,21 +89,10 @@ WSGI_APPLICATION = 'elearningsite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '77YXmM8Jl8CIPPmHLMtD',
-        'HOST': 'containers-us-west-38.railway.app',
-        'PORT': '6980',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -154,15 +145,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STRIPE_PUBLISHABLE_KEY= 'pk_test_51ND8sLLYOpzhEaWbhCLLEswRTiKauWLTjjEMsbWblXRpmZfpQs3TvcL7GKh7BqujbccaDNHK8tJFrNH5Ze0qhpuQ00wWBtqD5o'
 STRIPE_SECRET_KEY = 'sk_test_51ND8sLLYOpzhEaWbofRmpgUVjNzc5A6lDRF0IzD8SiYZlkH3rsOhK5g8QpJE6uxCEbfmyidJC05javwLmyoMKMyZ0090az8CIh'
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'elearning', 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'elearning', 'static', 'elearning'),
-# ]
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-
+django_heroku.settings(locals())
