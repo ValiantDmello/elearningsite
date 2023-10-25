@@ -132,7 +132,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+# STATIC_URL = '/static'
+STATIC_URL = '/static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -147,6 +149,8 @@ STRIPE_PUBLISHABLE_KEY= 'pk_test_51ND8sLLYOpzhEaWbhCLLEswRTiKauWLTjjEMsbWblXRpmZ
 STRIPE_SECRET_KEY = 'sk_test_51ND8sLLYOpzhEaWbofRmpgUVjNzc5A6lDRF0IzD8SiYZlkH3rsOhK5g8QpJE6uxCEbfmyidJC05javwLmyoMKMyZ0090az8CIh'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'elearning/static/elearning/')]
 
 django_heroku.settings(locals())
