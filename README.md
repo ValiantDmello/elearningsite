@@ -60,6 +60,3 @@ If you'd like to contribute to this project, please follow these guidelines:
 * Fork the project and create a branch for your feature or fix.
 * Make your changes, test them, and submit a pull request with a clear description of your changes.
 
-## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
