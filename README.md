@@ -31,9 +31,9 @@ This LMS (Learning Management System) project is a web application designed to f
 
 ### Installation
 1. Clone the repository:
-  ```git clone https://github.com/yourusername/your-lms-project.git```
+  ```git clone https://github.com/ValiantDmello/elearningsite.git```
 2. Navigate to the project directory:
-  ```cd your-lms-project```
+  ```cd elearningsite```
 3. Create a virtual environment and activate it:
   ```python -m venv venv```
   ```source venv/bin/activate # On Windows, use venv\Scripts\activate```
