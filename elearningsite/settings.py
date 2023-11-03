@@ -10,8 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
-import django_heroku
-import dj_database_url
+# import django_heroku
+# import dj_database_url
 from pathlib import Path
 from django.core.mail import send_mail
 
@@ -153,4 +153,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'elearning/static/elearning/')]
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
