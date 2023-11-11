@@ -1,1 +1,1 @@
-web: gunicorn eventech_backend.wsgi --log-file -
+web: gunicorn elearningsite.wsgi --log-file -
