@@ -35,7 +35,7 @@ EMAIL_HOST_PASSWORD = 'testtesttest'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
